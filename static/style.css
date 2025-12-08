@@ -1,0 +1,108 @@
+        body {
+            margin: 0;
+            background-color: #dbd496;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #997C45;
+            padding: 20px;
+            position: relative;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: normal;
+            font-size: 24px;
+        }
+
+        /* Звёздочки в углах */
+        .star {
+            position: absolute;
+            font-size: 80px;
+            color: #CDC140;
+            user-select: none;
+        }
+
+        .star.left {
+            left: 0px;
+            top: -25px;
+        }
+
+        .star.right {
+            right: 0px;
+            top: -25px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        form {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        input[type="text"] {
+            flex-grow: 1;
+            max-width: 400px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #999;
+            background-color: #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #a7ce5b;
+            border: none;
+            padding: 10px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #8bb341;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+        }
+
+        li + li {
+            border-top: 1px solid #c2bb70;
+        }
+
+        label {
+            cursor: pointer;
+            flex-grow: 1;
+            font-size: 18px;
+            user-select: none;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 15px;
+            transform: scale(1.5);
+            cursor: pointer;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: #555;
+        }
